@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .canvas {
+            border: 10px solid transparent;
+            width: 240px;
+            padding: 20px;
+            border-image-source: url("border1.jpg");
+            border-image-slice: 330;
+            border-image-repeat: round;
+            border-image-width: 20px;
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        .border1 {
+            border-image-source: url("border2.png");
+            border-image-slice: 30;
+            border-image-repeat: stretch;
+            border-image-width: 20px;
+        }
+        
+        .border2 {
+            border-image-source: url("border1.jpg");
+            border-image-slice: 330;
+            border-image-repeat: round;
+            border-image-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="canvas">
+        Unique
+    </div>
+    <select id="fonts">
+        <option value="fantasy">fantasy</option>
+        <option value="cursive">cursive</option>
+      </select>
+    <button id="btn">
+        click
+    </button>
+    <!-- <select id="borders">
+        <option value="fantasy">fantasy</option>
+        <option value="cursive">cursive</option>
+      </select> -->
+    <button id="btn1">
+        Border
+    </button>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        var i = 0;
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $(".canvas").css("font-family", $("#fonts").val())
+            })
+            $("#btn1").click(function() {
+                if (i == 0) {
+                    $(".canvas").addClass("border1");
+                    i = 1;
+                } else {
+                    $(".canvas").removeClass("border1");
+                    i = 0;
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

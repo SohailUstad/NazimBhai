@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unique Mirror</title>
+    <style>
+        * {
+            padding: 2px;
+        }
+
+        .col-sm-3 {
+            border-bottom: 1px solid black;
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+
+        #f1 {
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        #f2 {
+            font-family: 'Amatic SC', cursive;
+        }
+
+        #f3 {
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        #f4 {
+            font-family: 'Caveat', cursive;
+        }
+
+        #f5 {
+            font-family: 'Cinzel', serif;
+        }
+
+        #f6 {
+            font-family: 'Inconsolata', monospace;
+        }
+
+        #f7 {
+            font-family: 'Indie Flower', cursive;
+        }
+
+        #f8 {
+            font-family: 'Kaisei HarunoUmi', serif;
+        }
+
+        #f9 {
+            font-family: 'Kaisei Tokumin', serif;
+        }
+
+        #f10 {
+            font-family: 'Lobster', cursive;
+        }
+
+        #f11 {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+
+        #f12 {
+            font-family: 'Monoton', cursive;
+        }
+
+        #f13 {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        #f14 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        #f15 {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        #f16 {
+            font-family: 'Pacifico', cursive;
+        }
+
+        #f17 {
+            font-family: 'Padauk', sans-serif;
+        }
+
+        #f18 {
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        #f19 {
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        #f20 {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="text" id="name" class="form-control" placeholder="Enter name">
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary" id="button">Font</button>
+                <button class="btn btn-primary" id="small">Small</button>
+                <button class="btn btn-primary" id="big">Big</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="main">
+        <div class="row" id="row-1">
+            <div class="col-sm-3" id="f1">
+
+            </div>
+            <div class="col-sm-3" id="f2">
+
+            </div>
+            <div class="col-sm-3" id="f3">
+
+            </div>
+            <div class="col-sm-3" id="f4">
+
+            </div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="col-sm-3" id="f5">
+
+            </div>
+            <div class="col-sm-3" id="f6">
+
+            </div>
+            <div class="col-sm-3" id="f7">
+
+            </div>
+            <div class="col-sm-3" id="f8">
+
+            </div>
+        </div>
+        <div class="row" id="row-3">
+            <div class="col-sm-3" id="f9">
+
+            </div>
+            <div class="col-sm-3" id="f10">
+
+            </div>
+            <div class="col-sm-3" id="f11">
+
+            </div>
+            <div class="col-sm-3" id="f12">
+
+            </div>
+        </div>
+        <div class="row" id="row-4">
+            <div class="col-sm-3 " id="f13">
+
+            </div>
+            <div class="col-sm-3" id="f14">
+
+            </div>
+            <div class="col-sm-3" id="f15">
+
+            </div>
+            <div class="col-sm-3" id="f16">
+
+            </div>
+        </div>
+        <div class="row" id="row-5">
+            <div class="col-sm-3" id="f17">
+
+            </div>
+            <div class="col-sm-3" id="f18">
+
+            </div>
+            <div class="col-sm-3" id="f19">
+
+            </div>
+            <div class="col-sm-3" id="f20">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&family=Architects+Daughter&family=Caveat&family=Cinzel&family=Inconsolata&family=Indie+Flower&family=Kaisei+HarunoUmi&family=Kaisei+Tokumin:wght@500&family=Lobster&family=Ma+Shan+Zheng&family=Monoton&family=Noto+Sans:ital,wght@1,700&family=Orbitron&family=Oswald:wght@500&family=Pacifico&family=Padauk&family=Patrick+Hand&family=Permanent+Marker&family=Press+Start+2P&family=Rampart+One&family=Roboto:wght@400;500&family=Sacramento&family=Satisfy&family=Sigmar+One&family=Source+Sans+Pro&family=Special+Elite&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+
+
+    <script>
+        $(document).ready(function () {
+            $(".col-sm-3").text("");
+            $("#button").click(function () {
+                let text = $(".col-sm-3").text();
+                if (text =="") {
+                    let name = $("#name").val();
+                    $(".col-sm-3").append(name);
+                }
+            });
+            $("#small").click(function () {
+                $(".col-sm-3").css("font-size", "15px");
+            })
+            $("#big").click(function () {
+                $(".col-sm-3").css("font-size", "25px");
+            })
+        });
+    </script>
+</body>
+
+</html>
